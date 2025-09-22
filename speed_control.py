@@ -1,0 +1,13 @@
+def speed_control():
+    Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_RUN, 0)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_RUN, 50)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_RUN, 100)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_RUN, 150)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_RUN, 200)
+    basic.pause(1000)
+    Tinybit.car_ctrl_speed(Tinybit.CarState.CAR_RUN, 255)
+basic.forever(speed_control)
